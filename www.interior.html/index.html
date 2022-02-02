@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&family=Lora:wght@500&family=Montserrat:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Interior</title>
+  </head>
+  <body>
+    <header class="header _container">
+      <div class="header__logo">
+        <p>This Interior</p>
+      </div>
+      <nav class="header__navigation">
+        <ul class="header__nav">
+          <li class="nav__item">
+            <a href="./home.html" class="nav__link">home</a>
+          </li>
+          <li class="nav__item">
+            <a href="./collection.html" class="nav__link">collection</a>
+          </li>
+          <li class="nav__item">
+            <a href="./about.html" class="nav__link">about</a>
+          </li>
+          <li class="nav__item">
+            <a href="./contact.html" class="nav__link">contact</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__burger">
+        <span></span>
+      </div>
+      <nav class="header__menu">
+        <ul class="header__list">
+          <li><a href="#" class="header__link">home</a></li>
+          <li><a href="#" class="header__link">collection</a></li>
+          <li><a href="#" class="header__link">about</a></li>
+          <li><a href="#" class="header__link">contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main _container">
+      <div class="main__items">
+        <div class="main__item">
+          <div class="main__text">
+            <h1>Modern interior</h1>
+            <p>
+              A full-Service residential & commercial interior design and
+              staging company offering professional organizing & eco-services.
+            </p>
+          </div>
+          <a href="#" class="main__button"
+            >Read more
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M17 8l4 4m0 0l-4 4m4-4H3"
+              />
+            </svg>
+          </a>
+        </div>
+        <div class="main__item">
+          <div class="main__img">
+            <img src="./img/photo1.png" alt="intervier" />
+          </div>
+          <div class="main__author">
+            <div class="author__head">
+              <div class="author__img"></div>
+              <div class="author__text">
+                <span>Aliza Webber</span>
+                <p>Interior designer</p>
+              </div>
+            </div>
+            <div class="author__body">
+              <h4>Designed in 2020 by Aliza Webber</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <p>
+        created by
+        <a href="https://github.com/paulhackee">Paul Kharitonov</a> with 🖤 -
+        <a href="https://devchallenges.io/">devChallenges.io</a>
+      </p>
+    </footer>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        $(".header__burger").click(function (event) {
+          $(".header__burger, .header__menu").toggleClass("active");
+          $("body").toggleClass("lock");
+        });
+      });
+    </script>
+  </body>
+</html>
